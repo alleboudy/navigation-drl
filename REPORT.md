@@ -53,6 +53,28 @@ After training, the agent can exploit its estimations of the state action value 
 
 `model.py` a 1 hidden layer network used as the deep model for the local and target networks used in the agent following closely the ones from the udacity DRL nano degree class with a few tweaks
 
+### Hyperparameters:
+
+BUFFER_SIZE = int(1e5)   replay buffer size
+
+BATCH_SIZE = 512         minibatch size
+
+GAMMA = 0.99             discount factor
+
+TAU = 1e-3               for soft update of target parameters
+
+LR = 0.001               learning rate 
+
+UPDATE_EVERY = 20        how often to update the target network
+
+FC1_UNITS = 128 the number of the DQN hidden layer neurons
+
+idle_reward_start = -0.5   the initial custom reward penalty for not picking a banana 
+
+idle_reward_decay = 0.8    the decay of the pnealty
+
+
+
 
 ### Training progress:
 
