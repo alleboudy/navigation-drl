@@ -22,9 +22,24 @@ The state space has 37 dimensions and contains the agent's velocity, along with 
 
 The task is episodic, and in order to solve the environment, the agent must get an average score of +13 over 100 consecutive episodes.
 
-### Getting Started
 
-Download the environment from one of the links below.  You need only select the environment that matches your operating system:
+### Dependencies
+
+To set up your python environment to run the code in this repository, follow the instructions below.
+
+1. Create (and activate) a new environment with Python 3.6.
+	- __Linux__ or __Mac__: 
+	```bash
+	conda create --name drlnd python=3.6
+	source activate drlnd
+	```
+	- __Windows__: 
+	```bash
+	conda create --name drlnd python=3.6 
+	activate drlnd
+	```
+2. clone this repository and install the requirements in the python folder with `pip install ./python`
+3. Download the environment from one of the links below.  You need only select the environment that matches your operating system:
     - Linux: [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Linux.zip)
     - Mac OSX: [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana.app.zip)
     - Windows (32-bit): [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Windows_x86.zip)
@@ -34,6 +49,10 @@ Download the environment from one of the links below.  You need only select the 
 
     (_For AWS_) If you'd like to train the agent on AWS (and have not [enabled a virtual screen](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Training-on-Amazon-Web-Service.md)), then please use [this link](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Linux_NoVis.zip) to obtain the environment.
 
+4. unzip the folder and make sure to point to it in the Navigation.ipynb in the Cell under Step 2. Setting up the environment
+By default I assume it is under `/data/Banana_Linux_NoVis/Banana.x86_64`, but you can set anywhere as long as you point to it like in the line `env = UnityEnvironment(file_name="/data/Banana_Linux_NoVis/Banana.x86_64")`
+
+5. Run the cells of the notebook in order 
 
 ### Instructions
 
