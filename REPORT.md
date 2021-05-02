@@ -47,7 +47,7 @@ After training, the agent can exploit its estimations of the state action value 
 
 `model.pt` a trained model by the `Navigation.ipynb` notebook
 
-`replay_buffer.py` the replay buffer implementation
+`replay_buffer.py` the replay buffer implementation, exactly the same as the nano degree class' implementation
 
 `dqn_agent.py` a vanilla DQN agent implementation following closely the ones from the udacity DRL nano degree class with a few tweaks
 
