@@ -37,7 +37,7 @@ After training, the agent can exploit its estimations of the state action value 
 `figure 1. Deep reinforcement learning nano degree description of the DQN algorithm`
 
 ### Project files:
-`Navigation.ipynb` the notebook driving the instantiation of the environment, the agent and training of the agent's model
+`Navigation.ipynb` the notebook driving the instantiation of the environment, the agent and training of the agent's model, it is following closely the udacity DRL nano degree class's implementation with a few tweaks e.g. a custom reward signal plus adaptation to the Navigation environment.
 
 `Navigation.html` the same notebook saved in .html format after running it
 
@@ -49,9 +49,9 @@ After training, the agent can exploit its estimations of the state action value 
 
 `replay_buffer.py` the replay buffer implementation
 
-`dqn_agent.py` a vanilla DQN agent implementation 
+`dqn_agent.py` a vanilla DQN agent implementation following closely the ones from the udacity DRL nano degree class with a few tweaks
 
-`model.py` a 1 hidden layer network used as the deep model for the local and target networks used in the agent
+`model.py` a 1 hidden layer network used as the deep model for the local and target networks used in the agent following closely the ones from the udacity DRL nano degree class with a few tweaks
 
 
 ### Training progress:
