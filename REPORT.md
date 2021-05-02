@@ -71,29 +71,39 @@ FC1_UNITS = 128 the number of the DQN hidden layer neurons
 
 idle_reward_start = -0.5   the initial custom reward penalty for not picking a banana 
 
-idle_reward_decay = 0.8    the decay of the pnealty
+idle_reward_decay = 0.8    the decay of the penalty
 
+SEED = 13       The random seed used for reproducibility
 
+### The model used
+The model is very simple, thanks to the reward trick and proper hyperparameter tuning, 
+
+An input layer of size 37 same as the state size
+
+one hidden layer of 128 neurons with a RELU activation 
+
+An output layer of 4 neurons one for each action value for the input state
 
 
 ### Training progress:
 
 <img src="images/training-progress.png"/>
 
-Episode 100	Average Score: -2.13
-Episode 200	Average Score: 0.044
-Episode 300	Average Score: 2.05
-Episode 400	Average Score: 3.91
-Episode 500	Average Score: 5.63
-Episode 600	Average Score: 6.06
-Episode 700	Average Score: 7.52
-Episode 800	Average Score: 9.38
-Episode 900	Average Score: 10.29
-Episode 1000 Average Score: 12.26
-Episode 1100 Average Score: 12.18
-Episode 1200 Average Score: 12.90
-Episode 1201 Average Score: 13.01
-Environment solved in 1101 episodes!	Average Score: 13.01
+- Episode 100	Average Score: -2.13
+- Episode 200	Average Score: 0.044
+- Episode 300	Average Score: 2.05
+- Episode 400	Average Score: 3.91
+- Episode 500	Average Score: 5.63
+- Episode 600	Average Score: 6.06
+- Episode 700	Average Score: 7.52
+- Episode 800	Average Score: 9.38
+- Episode 900	Average Score: 10.29
+- Episode 1000 Average Score: 12.26
+- Episode 1100 Average Score: 12.18
+- Episode 1200 Average Score: 12.90
+- Episode 1201 Average Score: 13.01
+- Environment solved in 1101 episodes!	Average Score: 13.01
+
 ### Future improvements:
 Confidently, next target is to step up from the vanilla DQN and try out extensions of DQN mentioned in DeepMinds' paper [Rainbow: Combining Improvements in Deep Reinforcement Learning](https://arxiv.org/pdf/1710.02298.pdf)
 
